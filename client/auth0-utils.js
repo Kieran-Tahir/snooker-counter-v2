@@ -1,5 +1,5 @@
 import { setUser } from './actions/user'
-import { getUserRoles } from './apis/users'
+// import { getUserRoles } from './apis/users'
 import store from './store'
 
 const emptyUser = {
@@ -19,13 +19,13 @@ export async function cacheUser (useAuth0) {
   if (isAuthenticated) {
     try {
       const token = await getAccessTokenSilently()
-      const roles = await getUserRoles(user.sub)
+      // const roles = await getUserRoles(user.sub)
       const userToSave = {
         auth0Id: user.sub,
         email: user.email,
         name: user.nickname,
-        token,
-        roles
+        token
+
       }
       saveUser(userToSave)
     } catch (err) {
