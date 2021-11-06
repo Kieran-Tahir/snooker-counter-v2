@@ -3,6 +3,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 import { getLoginFn, getLogoutFn, getRegisterFn } from '../auth0-utils'
 import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 function Nav (props) {
   const { user } = props
@@ -26,26 +27,30 @@ function Nav (props) {
   }
 
   return (
-    <nav>
-      <h1 className='logo'>Full-stack Boilerplate with Auth0</h1>
-      <section className='nav-item'>
-        <IfAuthenticated>
-          <p>Hello, {user.name} {user.roles ? `(${user.roles})` : null}</p>
-          <section className='sign'>
-            <a href='/' onClick={handleLogoff} className='nav-link'>Log out</a>
-          </section>
-        </IfAuthenticated>
-        <IfNotAuthenticated>
-          {/* <section className='nav-item'> */}
-          <p>Hello, guest</p>
-          <section className='sign'>
-            <a href='/' onClick={handleLogin} className='nav-link'>Sign in</a>
-            <a href='/' onClick={handleRegister} className='nav-link'>Register</a>
-          </section>
-          {/* </section> */}
-        </IfNotAuthenticated>
-      </section>
-    </nav >
+    <div>
+      <div className='main-title'>
+        <h1 className='logo'>Billiards Counter</h1>
+        <section className='nav-item'>
+          <IfAuthenticated>
+            <p>Ciao, {user.name} {user.roles ? `(${user.roles})` : null}</p>
+            <section className='sign'>
+              <Link to='/' replace className='nav-link'>Home</Link>
+              <Link to='/profile' replace className='nav-link'>Profile</Link>
+              <a href='/' onClick={handleLogoff} className='nav-link'>Log out</a>
+            </section>
+          </IfAuthenticated>
+          <IfNotAuthenticated>
+            {/* <section className='nav-item'> */}
+            <p>Ciao, friend</p>
+            <section className='sign'>
+              <a href='/' onClick={handleLogin} className='nav-link'>Sign in</a>
+              <a href='/' onClick={handleRegister} className='nav-link'>Register</a>
+            </section>
+            {/* </section> */}
+          </IfNotAuthenticated>
+        </section>
+      </div >
+    </div >
   )
 }
 

@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+@import 'buttons.scss';
+@import 'nav.scss';
+@import 'landingpage.scss';
 
 html, 
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -28,14 +41,7 @@ table th {
   color: white;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  align-self: stretch;
-}
+
 
 .logo {
   width: 50%;
@@ -54,19 +60,7 @@ a {
   color: inherit;
 }
 
-.nav-item {
-  width: 50%;
-  text-align: right;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  align-items: center;
-}
-
-.registeration {
+.registration {
   display: flex;
   flex-direction: column;
   gap: 10px;

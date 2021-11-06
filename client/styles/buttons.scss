@@ -1,0 +1,21 @@
+.regular-button {
+  text-align: center;
+  text-decoration: none;
+  background-color: #17b34e;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: white;
+  width: 150px;
+  margin: 12px 20px;
+  &:hover {
+    cursor: pointer;
+    animation: pulse; 
+    animation-duration: 1s;
+      }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}

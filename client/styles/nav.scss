@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: rgb(15 122 33);
+  padding: 10px;
+  align-self: stretch;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 20px;
+}
+
+.nav-item {
+  text-align: right;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  color: rgb(15 122 33);
+  width: 50%;
+
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #3ecc28;
+  &:hover {
+    cursor: pointer;
+    animation: pulse; 
+    animation-duration: 1s;
+      }
+}
+
+.main-title {
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  color: rgb(15 122 33);
+  
+
+}
