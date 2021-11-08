@@ -20,3 +20,9 @@ export function getUserRoles (id) {
       return res.body.roles
     })
 }
+
+export async function updateUser (bio, id) {
+  const userBio = { bio, id }
+  return await request.post(rootUrl + '/users/' + `${id}`)
+    .send(userBio)
+}

@@ -29,10 +29,10 @@ function Nav (props) {
   return (
     <div>
       <div className='main-title'>
-        <h1 className='logo'>Billiards Counter</h1>
+        <h1 className='logo'>Snooker Counter</h1>
         <section className='nav-item'>
           <IfAuthenticated>
-            <p>Ciao, {user.name} {user.roles ? `(${user.roles})` : null}</p>
+            <p>Ciao, {user.name}</p>
             <section className='sign'>
               <Link to='/' replace className='nav-link'>Home</Link>
               <Link to='/profile' replace className='nav-link'>Profile</Link>
@@ -43,6 +43,7 @@ function Nav (props) {
             {/* <section className='nav-item'> */}
             <p>Ciao, friend</p>
             <section className='sign'>
+              <div>👉</div>
               <a href='/' onClick={handleLogin} className='nav-link'>Sign in</a>
               <a href='/' onClick={handleRegister} className='nav-link'>Register</a>
             </section>

@@ -5,9 +5,12 @@ exports.seed = function (knex) {
         {
           id: 1,
           auth0_id: '100100',
-          name: 'Ronnie O\'Sullivan',
+          first_name: 'Kieran',
+          last_name: 'Tahir',
           email: 'ron-the-rocket420@gmail.com',
-          description: 'Big snooker pro'
+          bio: 'Big snooker pro',
+          profile_pic: '',
+          rating: '4.5'
         }
       ])
     })

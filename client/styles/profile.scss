@@ -1,0 +1,148 @@
+.main-profile-container {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  
+}
+
+.profile-nav{
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+
+}
+
+.profile-box{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  padding: 20px;
+  margin: 30px;
+  margin-right: 10px;
+  justify-content: left;
+  color: #386641;
+  width: 30vh;
+  height: 60vh;
+  border-radius: 30px;
+  justify-content: space-between;
+}
+
+.profile-buttons {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 2vh;
+  margin: 2vh;
+  background-color: #F4A259;
+  color: #FFF;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: larger;
+  border: none;
+}
+
+.profile-games-display{
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  padding: 10px;
+  margin: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  justify-content: left;
+  color: #386641;
+  width: 100vh;
+  height: 60vh;
+}
+
+.game-cards-container{
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1vh;
+  overflow-y: auto;
+  height: 53vh;
+  border-radius: 30px;
+}
+
+.user-info{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vh;
+}
+
+.user-info-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 600;
+}
+
+.profile-name{
+  font-size: xx-large;
+  margin-bottom: 1vh;
+}
+
+.bio-header-text{
+  font-size: larger;
+}
+
+ .bio-box{
+  margin: 1vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  color: #386641;
+  line-height: 1.6;
+ }
+
+.vehicle-box{
+  margin: 1vh;
+  margin-top: 1vh;
+  margin-bottom: 1.5vh;
+  color: #386641;
+  line-height: 1.6;
+}
+
+.bio-buttons{
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  padding: 2vh;
+  margin: 1vh;
+  background-color: #F4A259;
+  color: #FFF;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: small;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    animation: pulse; 
+    animation-duration: 1s;
+      }
+}
+
+.profile-ride-card-info{
+  margin: 2vh;
+  display: grid;
+	grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+	grid-gap: 10px;
+  line-height: 2;
+}
+
+.profile-ride-card-info-passenger{
+  margin: 2vh;
+  display: grid;
+	grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+	grid-gap: 10px;
+  line-height: 2;
+}
+
+.each-ride-container-profile{
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  padding: 12px;
+  margin: 25px;
+  border-radius: 5px;
+  background-color: #D7E6B2;
+  color: #386641;
+  width: 100%;
+}

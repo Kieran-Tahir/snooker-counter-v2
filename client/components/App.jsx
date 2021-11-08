@@ -7,7 +7,7 @@ import Nav from './Nav'
 import Registration from './Registration'
 import LandingPage from './LandingPage'
 import nineball from './nineball'
-import PingRoutes from './PingRoutes'
+import Profile from './Profile'
 
 import { Route } from 'react-router'
 import 'animate.css'
@@ -18,9 +18,9 @@ function App () {
   return (
     <div className='app'>
       <Route path='/' component={Nav} />
-      <Route path='/' component={PingRoutes} />
       <Route path='/register' component={Registration} />
       <Route exact path='/' component={LandingPage} />
+      <Route path='/profile' component={Profile} />
       <Route path='/nineball' component={nineball} />
     </div>
   )

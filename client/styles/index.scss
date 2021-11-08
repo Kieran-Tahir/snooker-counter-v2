@@ -2,13 +2,14 @@
 @import 'buttons.scss';
 @import 'nav.scss';
 @import 'landingpage.scss';
+@import 'profile.scss';
 
 html, 
 
 .app {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
   
